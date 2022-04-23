@@ -72,6 +72,7 @@ dat <- data.frame(row = rep(1:n_rows, each=seats_per_row), seat = rep(1:seats_pe
 # remove superfluous seats from last row (imperfect)
 dat <- dat[-((dim(dat)[1]-superfluous_seats+1) : dim(dat)[1]),]
 
+# define edge seats
 dat$edge[dat$seat==1] <- 1
 
 for (r in 1:n_rows){
@@ -80,8 +81,8 @@ for (r in 1:n_rows){
 }
 
 
-# Fill in edges first
-#=======================
+# Fill in edges first (whites)
+#==============================
 
 edges <- which(dat$edge==1)
 for (l in edges){
