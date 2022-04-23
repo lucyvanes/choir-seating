@@ -1,6 +1,6 @@
 # 23/04/2022
 # Lucy Vanes
-# Code to create jumbled choir seating
+# Create jumbled choir seating
 # with full voice part labels
 
 # Define seating
